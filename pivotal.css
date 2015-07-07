@@ -1,0 +1,270 @@
+#column-togglers {
+
+}
+#column-togglers .column-toggler {
+    display: inline-block;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    cursor: pointer;
+    color: #999;
+    padding: 3px 5px;
+    margin-left: 10px;
+    font-size: 12px;
+    font-weight: bold;
+}
+#column-togglers .column-toggler.selected {
+    background: #fff;
+}
+#column-togglers .column-toggler:hover, #column-togglers .column-toggler.selected {
+    color: #256188;
+}
+
+#re-jivotalise {
+    padding: 3px 5px;
+    margin-left: 30px;
+    font-size: 12px;
+    display: none;
+    cursor: pointer;
+    color: #ddd;
+    background-color: #256188;
+}
+#re-jivotalise:hover {
+    color: #fff;
+    font-weight: bold;
+}
+
+/*
+*   JIRA override section
+*/
+
+.ghx-columns {
+    border-spacing: 1px 0 !important;
+    /*min-height: 650px;*/
+}
+#ghx-header {
+    padding: 10px 20px 1px !important;
+}
+
+/* Issues */
+.ghx-issue {
+    font-size: 12px !important;
+    height: initial !important;
+	max-height: 33px;
+	overflow: hidden;
+}
+.ghx-issue .ghx-flags {
+    left: 2px !important;
+    top: 2px !important;
+}
+.ghx-issue .ghx-avatar {
+    top: 5px !important;
+    right: 2px !important;
+}
+.ghx-issue .ghx-avatar img {
+    height: 20px !important;
+    width: 20px !important;
+}
+.ghx-issue .ghx-key, .ghx-issue .ghx-end {
+    display: none !important;
+}
+.ghx-issue .ghx-grabber {
+    height: 100% !important;
+}
+.ghx-issue .ghx-summary {
+    margin-left: 4px;
+}
+.ghx-issue .ghx-issue-content {
+    padding: 3px 10px 10px 38px !important;
+}
+.ghx-issue-fields .ghx-type {
+    left: 20px !important;
+    top: 2px !important;
+    background-repeat: no-repeat;
+    height: 13px;
+    width: 15px;
+}
+.ghx-has-avatar .ghx-issue-fields {
+    padding-right: 20px !important;
+}
+.ghx-band-2 .ghx-issue-fields .ghx-summary {
+    margin-top: 0 !important;
+}
+.ghx-band-2 .ghx-issue-fields {
+    margin-top: 0 !important;
+}
+.ghx-issue-fields .ghx-summary .ghx-inner {
+    /*text-overflow: ellipsis !important;*/
+    /*white-space: nowrap !important;*/
+	height: initial !important;
+	max-height: 2.1em;
+}
+span.ghx-type img {
+    display: none;
+}
+.ghx-issue .ghx-issue-content .ghx-extra-fields {
+    position: absolute;
+    left: 0.5em;
+    top: 1.8em;
+    color: #C425CF;
+    font-size: 90%;
+    margin: 0;
+}
+.ghx-issue .ghx-issue-content .ghx-extra-fields .ghx-extra-field {
+    max-width: 4em;
+}
+span.ghx-extra-field.ghx-fa {
+    color: inherit;
+}
+div.ghx-grabber {
+    width: 0;
+}
+
+/* Swimlane Headers */
+.ghx-swimlane .ghx-swimlane-header .ghx-heading {
+    margin: 0;
+    padding: 0 17px;
+    background-color: #fcf;
+}
+.ghx-swimlane .ghx-swimlane-header {
+    font-size: 13px;
+    padding: 0;
+    line-height: 2;
+}
+.ghx-swimlane .ghx-swimlane-header:after {
+    box-shadow: none;
+}
+.ghx-swimlane-header .ghx-expander .ghx-iconfont {
+    padding: 0 1000px;
+}
+.ghx-swimlane.ghx-closed .ghx-swimlane-header .ghx-expander .ghx-iconfont {
+    margin: 0 !important;
+}
+span.ghx-iconfont.aui-icon.aui-icon-small.aui-iconfont-expanded {
+    margin: 0 !important;
+}
+
+/*Subtask*/
+.ghx-issue-subtask {
+	margin-left: 16px;
+}
+.ghx-issue-subtask .ghx-issue-fields {
+	margin-left: -20px;
+}
+.ghx-parent-group {
+}
+.sub-task-toggler {
+	height: 10px;
+	background: #666;
+	margin-left: 20px;
+	color: #fff;
+	font-size: 9px;
+	text-align: center;
+	cursor: pointer;
+}
+.sub-task-toggler:hover {
+	background: #999;
+}
+
+
+/* Column Headers */
+.ghx-column-headers .ghx-column {
+    padding: 1px 10px !important;
+    background-color: #000;
+    border: none !important;
+    border-radius: 6px 6px 0 0;
+}
+.ghx-column-headers h2 {
+    color: #fff !important;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: bold;
+    font-size: 13px;
+}
+.ghx-column-headers .ghx-column.ghx-target-option {
+    background-color: #e44;
+}
+.ghx-column-headers .ghx-column.ghx-target-option.ghx-target-hover {
+    background-color: #4d4;
+
+}
+#ghx-column-header-group.ghx-fixed {
+    background: none !important;
+    position: initial !important;
+	width: initial !important;
+}
+#ghx-pool {
+    padding: 3px !important;
+    background: #73797F;
+    /*overflow-y: hidden !important;*/
+}
+
+.ghx-controls-work {
+    height: 30px !important;
+}
+.ghx-zone-overlay-table {
+    opacity: 0.2;
+}
+.ghx-issue.ui-draggable-dragging, .ghx-issue.ui-sortable-helper {
+    opacity: 0.7;
+}
+
+.ghx-column-headers .ghx-column, .ghx-columns .ghx-column {
+/*    overflow-y: auto;
+    overflow-x: hidden;*/
+}
+.ghx-columns .ghx-column {
+    background-color: #B8B8B8 !important;
+}
+.ghx-column-headers, .ghx-columns {
+    border-spacing: 3px 0 !important;
+}
+#ghx-work {
+    /*height: inherit !important;*/
+}
+#ghx-column-headers {
+    padding-top: 0 !important;
+}
+
+
+/* Main Header */
+.aui-header {
+    background: #256188 !important;
+    color: #fff !important;
+	height: 40px;
+}
+.aui-header .aui-dropdown2-trigger {
+    color: #fff !important;
+}
+.aui-header .aui-icon-dropdown, .aui-header .aui-dropdown2-trigger::after {
+   border-top-color: #fff !important;
+}
+.aui-header .aui-header-logo a {
+    width: 120px;
+	padding-top: 6px;
+}
+.aui-header .aui-header-logo img {
+	padding: 5px;
+}
+#logo :after {
+    content: ' Jivotal' !important;
+    font-family: 'Tahoma';
+    font-size: 17px;
+    display: inline;
+    color: #FFF;
+	font-weight: bold;
+	letter-spacing: 1px;
+}
+
+/* Stupid Doge Avatars */
+/*img.ghx-avatar-img[data-tooltip="Assignee: Denise Furlong"] {
+    border-bottom: 4px solid #d00;
+}
+img.ghx-avatar-img[data-tooltip="Assignee: Craig Rosie"] {
+    border-bottom: 4px solid #6F86FA;
+}
+img.ghx-avatar-img[data-tooltip="Assignee: Ian Luddy"] {
+    border-bottom: 4px solid #000;
+}
+img.ghx-avatar-img[data-tooltip="Assignee: Matthew Maglennon"] {
+    border-bottom: 4px solid #2BC23E;
+}*/

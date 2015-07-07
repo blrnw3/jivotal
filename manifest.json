@@ -1,0 +1,19 @@
+{
+    "name": "Jivotal",
+    "description": "JIRA, meet Pivotal Tracker.",
+    "version": "1.4",
+    "permissions": [
+        "tabs","<all_urls>"
+    ],
+    "content_scripts": [
+        {
+        "matches": [
+            "https://artsalliancemedia.atlassian.net/*"
+            ],
+        "js": ["jquery-2.1.1.js", "content.js"],
+        "run_at": "document_end"
+        }
+    ], 
+    "manifest_version": 2,
+     "web_accessible_resources": ["pivotal.css", "piv_logo.png", "piv_bug.png", "piv_feature.png", "piv_chore.png"]
+}
