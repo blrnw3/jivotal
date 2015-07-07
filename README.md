@@ -3,5 +3,6 @@ Jivotal
 Jivotal brings the UI/X of Pivotal to JIRA.
 
 --
-This will only work out-of-the box for the ScreenWriter Board. 
-Edit the IDs in content.js -> lanes to match your board.
+May need adjustment for the specific features of your board
+But mostly works out of the box
+Enjoy being able to see more than two tickets on the screen at one time.
